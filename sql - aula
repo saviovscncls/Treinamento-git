@@ -1,0 +1,50 @@
+pessoa = n
+
+id-pessoa
+nome
+profissão
+nascimemto 
+sexo
+peso
+altura 
+nascionalidade
+
+curso = 1
+
+id-curs
+nome
+descrição
+carga
+totAulas 
+ano
+
+
+create table pessoa (
+		id_pessoa int auto_increment not null primary key,
+		nome varchar(50),
+		profissao varchar(50),
+		nascimento varchar(20),
+		sexo varchar(1),
+		peso float,
+		altura float,
+		nascionalidade varchar(20));
+
+create table curso(
+		id_curso int auto_increment not null primary key,
+		nome varchar(50),
+		descricao varchar(50),
+		cargaH int,
+		totAula int,
+		ano varchar(20));
+
+alter table pessoa add curso_preferido int;
+
+alter table pessoa add foreign key (curso_preferido) references curso(id_curso);
+
+
+
+
+
+
+
+	
