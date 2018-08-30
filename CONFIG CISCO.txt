@@ -1,0 +1,19 @@
+enable - ativar super user;
+
+configure terminal(conf t) - configuração global
+
+hostname "nome" - alterar nome do roteador
+
+ip add "ip" + "mascara"
+
+no shutdown - liga a interface
+
+interface s2/0 - configurar a interface serial
+
+ip add "ip" + "mascara" - configura interface serial
+
+router rip - config rip	
+	*network + ip
+
+router ospf 1(num processo) - configurar OSPF
+	*network ip+mascara(ao contrario)+area+0
