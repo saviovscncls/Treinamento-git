@@ -1,0 +1,29 @@
+1 QUESTÃO:
+source /home/aluno/Downloads/mysqlsampledatabase/mysqlsampledatabase.sql
+2 QUESTÃO:
+create user 'atividade'@'localhost' identified by '123';
+3 QUESTÃO 
+mysql -u atividade -p123
+4 QUESTÃO
+drop user 'atividade'@'localhost';
+5 QUESTÃO
+create user 'atividade'@'%' identified by '123';
+6 QUESTÃO
+grant select on classicmodels.customers to 'atividade'@'%';
+flush privileges;
+7 QUESTÃO
+select * from payments;
+ 
+10 QUESTÃO
+grant all privileges on *.* to 'atividade'@'%';
+11 QUESTÃO
+delete from payments where customernumber = 496;
+12 QUESTÃO
+delete from payments where customernumber = 495;
+13 QUESTÃO
+drop table payments;
+14 QUESTÃO
+mysqldump -u root -p classicmodels > /home/aluno/Downloads/classicmodels.sql
+15 QUESTÃO
+mysql -u root -p teste27 < /home/aluno/Downloads/classicmodels.sql
+

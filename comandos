@@ -1,0 +1,17 @@
+create user 'nomeDoUser'@'localhost' identified by 'Senha'; -- CRIAR UM NOVO USUARIO
+
+select user,host from mysql.user; -- MOSTRAR TODOS OS USER E OS HOSTS
+
+
+show grants -- LISTA AS PERMISSÕES QUE O USUARIO POSSUI
+
+grant all privileges on *.* to 'savio''localhost' with grant option; -- CONCEDER PRIVILEGIOS TOTAL PARA O USUARIO
+
+
+flush privileges; -- NECESSARIO USAR DEPOIS CONCEDER PRIVILEGIOS AO USUARIOS
+
+great all privileges on NomeDoBanco.NomeDaTable to 'NomeDeUser'@'localhost';
+
+revoke TipoDePermissão on nome
+
+drop user 'nome'@'localhost';  -- REMOVE UM USUARIO;	
